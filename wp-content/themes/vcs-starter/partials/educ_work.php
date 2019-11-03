@@ -25,8 +25,8 @@
                                                 ?>
                                         <a id="diploma1" href="<?php echo $diploma_link['url'] ?>" <?php echo $diploma_link['target'] ? 'target="_blank"' : ''; ?>><?php echo $diploma_link['title'] ?></a>
                                     </div>
-                                    <p class="education_description">
-                                        <?php the_sub_field('e_sub_description'); ?>
+                                    <?php the_sub_field('e_sub_description'); ?>
+                                    <p class="education_description">                                    
                                     </p>
                                 </div>
                         <?php
@@ -53,19 +53,13 @@
                             while (have_rows('ex_sub_section_2')) :
                                 the_row();
                                 ?>
-                                 <div class="experience_list">
-                            <h3><?php the_sub_field('ex_sub_title'); ?></h3>
-                            <p class="experience_date"><?php the_sub_field('ex_date'); ?></p>
-                            <div class="photo_link">
-                                <?php $photo_link = get_sub_field('ex_photo_link');
-                                // dump($photo_link);
-                                ?>
-                                <a id="photo1" href="<?php echo $photo_link['url'] ?>" <?php echo $photo_link['target'] ? 'target="_blank"' : ''; ?>><?php echo $photo_link['title'] ?></a>
-                            </div>
-                            <p class="education_description">
-                                <?php the_sub_field('ex_sub_description'); ?>
-                            </p>
-                        </div>
+                                <div class="experience_list">
+                                    <h3><?php the_sub_field('ex_sub_title'); ?></h3>
+                                    <p class="experience_date"><?php the_sub_field('ex_date'); ?></p>
+                                    <?php the_sub_field('ex_sub_description'); ?> 
+                                    <p class="education_description">                                    
+                                    </p>
+                                </div>
                         <?php
                             endwhile;
                         endif;

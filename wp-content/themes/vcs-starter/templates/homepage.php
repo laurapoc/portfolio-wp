@@ -19,5 +19,5 @@ get_template_part('partials/footer-content');
 ?>
 
 <!-- Start Point -->
-<h1>Esame homepage.php</h1>
+
 <?php get_footer(); ?>

@@ -17,7 +17,7 @@
                             <?php foreach ($images as $image) : ?>
                                 <div class="photo">
 
-                                    <a id="gal1" data-fancybox="galerija1" href="<?php echo esc_url($image['sizes']['gallery_big']); ?>">
+                                    <a id="<?php the_field($image['Title']); ?>" data-fancybox="galerija1" href="<?php echo esc_url($image['sizes']['gallery_big']); ?>">
                                         <img src="<?php echo esc_url($image['sizes']['gallery_small']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" />
                                     </a>
 
