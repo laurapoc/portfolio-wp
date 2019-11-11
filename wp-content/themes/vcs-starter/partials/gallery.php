@@ -26,6 +26,10 @@
                         <?php endif; ?>
                     </div>
                 </div>
+                <a href="#photo_galery" id="photo_galery-toggle" class="galery-toggle" aria-label="Open galery">
+                    <span class="sr-only"></span>
+                    <span class="fa fa-sort" aria-hidden="true"></span>
+                </a>
             </div>
         </div>
     </section>
