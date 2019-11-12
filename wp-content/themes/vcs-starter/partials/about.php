@@ -13,7 +13,7 @@
                 <div class="container">
 
                     <h2><?php the_field('a_section_title'); ?></h2>
-                    <P><?php the_field('a_section_description'); ?></p>
+                    <?php the_field('a_section_description'); ?>
                     <div class="about_details">
 
                         <?php
@@ -27,8 +27,7 @@
                                     </div>
                                     <div class="icon_block">
                                         <h3><?php the_sub_field('sub_title'); ?></h3>
-                                        <P><?php the_sub_field('sub_description'); ?>
-                                        </P>
+                                        <?php the_sub_field('sub_description'); ?>
                                     </div>
                                 </div>
                         <?php

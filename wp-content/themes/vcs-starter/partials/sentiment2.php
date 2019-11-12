@@ -6,11 +6,11 @@
             while (have_rows('sentiment_carousel')) :
                 the_row();
                 ?>
-                
-     <div class="container">
-         <P><?php the_sub_field('text_carousel'); ?></P>
-         <p class="sent-name"><?php the_sub_field('author'); ?></p>
-     </div>
+
+             <div class="container">
+                 <?php the_sub_field('text_carousel'); ?>
+                 <p class="sent-name"><?php the_sub_field('author'); ?></p>
+             </div>
      <?php
             endwhile;
         endif;

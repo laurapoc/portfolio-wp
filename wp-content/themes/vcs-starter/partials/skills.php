@@ -7,9 +7,7 @@
                     <div class="skills_contacts">
                         <div class="my_skills">
                             <h2><?php the_field('s_heading'); ?></h2>
-                            <P>
                                 <?php the_field('s_section_description'); ?>
-                            </p>
                         </div>
                         <div class="contact_me">
                             <?php

@@ -6,8 +6,7 @@
                 <h2><?php the_field('e_section_1_title'); ?></h2>
                 <div class="education">
                     <div class="education_paragraph">
-                        <P><?php the_field('e_section_1_description'); ?>
-                        </p>
+                    <?php the_field('e_section_1_description'); ?>
                     </div>
                     <div class="education_paragraph">
                         <?php
@@ -23,7 +22,7 @@
                                                 $diploma_link = get_sub_field('diploma_link');
                                                 // dump($diploma_link);
                                                 ?>
-                                        <a id="diploma1" href="<?php echo $diploma_link['url'] ?>" <?php echo $diploma_link['target'] ? 'target="_blank"' : ''; ?>><?php echo $diploma_link['title'] ?></a>
+                                        <a href="<?php echo $diploma_link['url'] ?>" <?php echo $diploma_link['target'] ? 'target="_blank"' : ''; ?>><?php echo $diploma_link['title'] ?></a>
                                     </div>
                                     <?php the_sub_field('e_sub_description'); ?>
                                     <p class="education_description">                                    
@@ -44,8 +43,7 @@
                 <h2><?php the_field('ex_section_2_title'); ?></h2>
                 <div class="experience">
                     <div class="experience_paragraph">
-                        <P><?php the_field('ex_section_2_description'); ?>
-                        </p>
+                    <?php the_field('ex_section_2_description'); ?>
                     </div>
                     <div class="experience_paragraph">
                         <?php
